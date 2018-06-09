@@ -19,10 +19,18 @@ namespace AnitaBlog.Persistence
         {
             //Category
             modelBuilder.Entity<Category>()
+                .Property(cate => cate.ID)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Category>()
                 .Property(cate => cate.Name)
                 .IsRequired();
 
             //Article
+            modelBuilder.Entity<Article>()
+                .Property(cate => cate.ID)
+                .ValueGeneratedOnAdd();
+
             modelBuilder.Entity<Article>()
                 .Property(cate => cate.Title)
                 .IsRequired();
@@ -32,6 +40,10 @@ namespace AnitaBlog.Persistence
                 .IsRequired();
             
             //Account
+             modelBuilder.Entity<Account>()
+                .Property(cate => cate.ID)
+                .ValueGeneratedOnAdd();
+                
             modelBuilder.Entity<Account>()
                 .Property(cate => cate.Username)
                 .IsRequired();

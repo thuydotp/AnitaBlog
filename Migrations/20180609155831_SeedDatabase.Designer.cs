@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AnitaBlog.Migrations
 {
     [DbContext(typeof(AnitaBlogContext))]
-    [Migration("20180607171153_Initialize Entities")]
-    partial class InitializeEntities
+    [Migration("20180609155831_SeedDatabase")]
+    partial class SeedDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
